@@ -1,0 +1,137 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;list-style: none; text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav #navbar{
+position: absolute;
+z-index: 2;
+
+}
+/* navigation bar  */
+nav #navbar #navlist{
+    display: flex;
+    padding: 10px;
+    }
+nav #navbar #navlist li{
+    margin: 11px 15px;
+         }
+nav #navbar #navlist .navtab a{
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    border: 0.2rem solid white;
+    border-radius: 1rem;
+    padding: 4px 17px;
+    font-weight: 800;
+         }
+nav #navbar #navlist .navtab a:hover{
+     color: black;
+     border-color: black;
+         }
+/* navigation bar */
+
+/* home  */
+#home{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+content: '';     
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: url('/Images/girl-umbrella.jpg') center no-repeat;
+background-size: cover;
+position: absolute;
+opacity: 0.7;
+z-index: 1; 
+}
+#home .home-box{
+    margin: auto;
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+}
+#home .home-box h1{
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: 0.1rem;
+    line-height: 4.2rem;
+    
+    }
+#home .home-box:nth-child(2){
+   visibility: hidden;
+}
+#homequote #quote{
+    display: flex;
+    flex-direction: column;
+  padding: 50px 275px;
+    background-color: gray;
+    color: white;
+    font-size: 1.7rem; 
+    justify-content: center;
+    align-items: center;
+    font-weight: 100; 
+    text-align: center;
+    }
+    /* home ends here */
+
+/* description */
+#description #description-outer{
+    display: flex;
+     
+    /* flex-direction: column; */
+}
+#description #description-outer .description-box{ 
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 220px 25px;
+    /* flex-direction: column; */
+}#description #description-outer .description-box:nth-child(1){ 
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+     
+    margin: 220px 100px;
+    /* flex-direction: column; */
+}
+#description #description-outer .description-box img{
+    width: 70%;
+    height: 70%; 
+    border-radius: 0.5rem;
+    margin: 20px auto;
+ }
+ #description #description-outer .description-box h1{
+     font-size: 2.5rem;
+     letter-spacing: 0.15rem;
+     text-transform: capitalize;
+ }
+ #description #description-outer .description-box p{
+     margin: 10px auto;
+     font-size: 1.5rem;
+     text-align: justify;
+     line-height: 2rem;
+     letter-spacing: 0.05rem;
+     padding:10px 90px;
+   }
+/* description  ends*/
+
+/* footer */
+footer{
+     border-top: 3px solid gray;
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    padding: 25px 0px; 
+}
+
+/* footer ends  */
